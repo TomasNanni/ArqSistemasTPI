@@ -110,7 +110,7 @@ def test_process_product_returns_correct_totals(sample_df):
     k, code, sales, price = process_product(sample_df, 0, len(sample_df), "S01")
     assert code == "P01"
     assert k == 2
-    assert sales == 8              # 5 + 3
+    assert sales == 10              # fallo intencional
     assert price == pytest.approx(300.0)  # 100 + 200
 
 def test_process_product_single_row(sample_df):
